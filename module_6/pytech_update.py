@@ -10,4 +10,9 @@ client = MongoClient(url)
 # to connect to the pytech database
 db = client.pytech
 
-db.students.find()
+# get the student collection
+students = db.students
+
+# finding the students in the list
+student_list = students.find({})
+
