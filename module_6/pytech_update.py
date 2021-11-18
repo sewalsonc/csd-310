@@ -16,3 +16,5 @@ students = db.students
 # finding the students in the list
 student_list = students.find({})
 
+# display message 
+print("\n --Displaying the student documents from 'find'() query--")
