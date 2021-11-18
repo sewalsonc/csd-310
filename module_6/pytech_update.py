@@ -1,4 +1,5 @@
 # inporting method
+from typing import Set
 from pymongo import MongoClient
 
 # connection to MongoDB
@@ -22,3 +23,12 @@ print("\n --Displaying the student documents from 'find'() query--")
 # looping through the collection and outputing the results
 for doc in student_list:
     print(" Student ID: " + doc["student_id"] + "\n First Name: " + doc["first_name"] + "\n Last Name: " + doc["last_name"] + "\n")
+
+print()
+
+db.students.update_one({"student_id": "1007"}, {"$set": {"last_name": "Bower"}})
+
+print()
+
+x = students.find_one({"student_id": "1007"})
+print(x)
