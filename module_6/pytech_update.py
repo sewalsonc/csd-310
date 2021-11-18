@@ -18,3 +18,7 @@ student_list = students.find({})
 
 # display message 
 print("\n --Displaying the student documents from 'find'() query--")
+
+# looping through the collection and outputing the results
+for doc in student_list:
+    print(" Student ID: " + doc["student_id"] + "\n First Name: " + doc["first_name"] + "\n Last Name: " + doc["last_name"] + "\n")
