@@ -160,7 +160,7 @@ Kyle = {
 students = db.students
 
 # insert statements with output 
-print("\n  -- INSERT STATEMENTS --")
+print("\n  -- INSERT STATEMENTS --\n")
 william_student_id = students.insert_one(William).inserted_id
 print("  Inserted student record William Corey into the students collection with document_id " + str(william_student_id))
 
