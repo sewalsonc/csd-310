@@ -102,8 +102,10 @@ db.students.delete_one({"student_id": "1010"})
 # finding the students in the list
 student_list = students.find({})
 
-# display message 
-print("\n --Displaying the student documents from 'find'() query--\n")
+# display message
+
+print("\n --Student 'Student_id' : '1010', has been deleted-- \n") 
+print("\n --Displaying the student documents from 'find'() query after student deletion--\n")
 
 # looping through the collection and outputing the results
 for doc in student_list:
