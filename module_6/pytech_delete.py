@@ -75,7 +75,7 @@ Pamela = {
 }
 
 # insert statements with output 
-print("\n  -- INSERT STATEMENTS --")
+print("\n  -- INSERT STATEMENTS --\n")
 pamela_student_id = students.insert_one(Pamela).inserted_id
 print("  Inserted student record Pamela Sanders into the students collection with document_id " + str(pamela_student_id))
 
@@ -83,17 +83,27 @@ print("  Inserted student record Pamela Sanders into the students collection wit
 pamela = students.find_one({"student_id": "1010"})
 
 # outputing the results of find_one
-print("\n --Displaying student document from 'find_one()' query --")
+print("\n --Displaying student document from 'find_one()' query --\n")
 print(" Student ID: " + pamela["student_id"] + "\n First Name: " + pamela["first_name"] + "\n Last Name: " + pamela["last_name"] + "\n")
-
-# using student_id to find a student
-db.students.remove({"student_id": "1010"})
 
 # finding the students in the list
 student_list = students.find({})
 
 # display message 
-print("\n --Displaying the student documents from 'find'() query--")
+print("\n --Displaying the student documents from 'find'() query--\n")
+
+# looping through the collection and outputing the results
+for doc in student_list:
+    print(" Student ID: " + doc["student_id"] + "\n First Name: " + doc["first_name"] + "\n Last Name: " + doc["last_name"] + "\n")
+
+# using student_id to delete a student
+db.students.delete_one({"student_id": "1010"})
+
+# finding the students in the list
+student_list = students.find({})
+
+# display message 
+print("\n --Displaying the student documents from 'find'() query--\n")
 
 # looping through the collection and outputing the results
 for doc in student_list:
