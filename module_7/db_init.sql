@@ -1,7 +1,7 @@
 /*
     Title: db_init.sql
-    Author: Professor Krasso
-    Date: 15 July 2020
+    Author: Copied from course Github repo by Professor Krasso
+    Date: Nov 26, 2021
     Description: pysports database initialization script.
 */
 
