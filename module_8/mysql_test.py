@@ -1,4 +1,4 @@
-""" 
+"""
     Title: pysports_join_queries.py
     Author: copied from course repo
     Date: Nov 26, 2021
