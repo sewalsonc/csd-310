@@ -33,6 +33,7 @@ try:
     teams = cursor.fetchall()
 
     print("\n  --Team Records--")
+    print()
 
     # iterating over the team records and displaying results
 
@@ -46,7 +47,9 @@ try:
     players = cursor.fetchall()
 
     print("\n --Player Records--")
+    print()
 
+    # iterating over the player records and returning results 
     for player in players:
         print(" Player ID: {}\n First Name: {}\n Last Name: {}\n Team ID: {}\n".format(player[0], player[1], player[2], player[3]))
     
