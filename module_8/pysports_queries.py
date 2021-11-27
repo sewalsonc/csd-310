@@ -53,7 +53,7 @@ try:
     for player in players:
         print(" Player ID: {}\n First Name: {}\n Last Name: {}\n Team ID: {}\n".format(player[0], player[1], player[2], player[3]))
     
-    input("\n\n Press any key")
+    input("\n\n Press the enter key")
 
 except mysql.connector.Error as err:
     """error handling"""
