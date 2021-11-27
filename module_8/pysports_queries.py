@@ -1,6 +1,6 @@
 """
     Title: pysports_join_queries.py
-    Author: copied from course repo
+    Author: recreated by Chris Sewalson
     Date: Nov 26, 2021
     Description: Test program for joining the player and team tables
 """
@@ -13,7 +13,7 @@ from mysql.connector import errorcode
 """ database config object """
 config = {
     "user": "pysports_user",
-    "password": "LillyNoahAnna1!",
+    "password": "MySQLpassword1!",
     "host": "127.0.0.1",
     "database": "pysports",
     "raise_on_warnings": True
