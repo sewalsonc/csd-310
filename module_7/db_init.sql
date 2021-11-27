@@ -10,7 +10,7 @@ DROP USER IF EXISTS 'pysports_user'@'localhost';
 
 
 -- create pysports_user and grant them all privileges to the pysports database 
-CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'LillyNoahAnna1!';
+CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQLpassword1!';
 
 -- grant all privileges to the pysports database to user pysports_user on localhost 
 GRANT ALL PRIVILEGES ON pysports.* TO'pysports_user'@'localhost';
