@@ -1,5 +1,5 @@
 """
-    Title: pysports_join_queries.py
+    Title: pysports_queries.py
     Author: recreated by Chris Sewalson
     Date: Nov 26, 2021
     Description: Test program for joining the player and team tables
