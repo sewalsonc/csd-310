@@ -1,8 +1,8 @@
 """
     Title: pysports_join_queries.py
-    Author: recreated by Chris Sewalson
+    Author: Chris Sewalson
     Date: Dec 4, 2021
-    Description: Joining the player and team tables
+    Description: Joining the player and team tables and outputing results
 """
 
 """ import statements """
@@ -10,7 +10,7 @@ from dns.query import _set_selector_class
 import mysql.connector
 from mysql.connector import errorcode
 
-""" database config object """
+""" database login """
 config = {
     "user": "pysports_user",
     "password": "MySQLpassword1!",
@@ -32,6 +32,7 @@ try:
     players = cursor.fetchall()
 
     print("\n --Player Records--")
+    print()
 
     # iterating through player data and displaying results
     for player in players:
