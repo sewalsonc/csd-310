@@ -26,7 +26,7 @@ try:
     cursor = db.cursor()
 
     # performing the inner join
-    cursor.execute("SELECT player_id, first_name, last_name, team_name FROM play INNER JOIN team ON player.team_id = team.team_id")
+    cursor.execute("SELECT player_id, first_name, last_name, team_name FROM player INNER JOIN team ON player.team_id = team.team_id")
 
     # initializing variable "players" with results of cursor.fetchall
     players = cursor.fetchall()
