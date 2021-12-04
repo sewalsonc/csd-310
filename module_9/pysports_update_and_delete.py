@@ -2,7 +2,7 @@
     Title: pysports_update_and_delete.py
     Author: Chris Sewalson
     Date: Dec 4, 2021
-    Description: Adding 
+    Description: Printing original players,then adding, updating, and deleting new player 
 """
 
 """ import statements """
