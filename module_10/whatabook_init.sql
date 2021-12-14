@@ -114,7 +114,7 @@ INSERT INTO user(first_name, last_name)
 */
 INSERT INTO wishlist(user_id, book_id) 
     VALUES (
-        (SELECT user_id FROM user WHERE first_name = 'Paul'), 
+        (SELECT user_id FROM user WHERE first_name = 'Chris'), 
         (SELECT book_id FROM book WHERE book_name = 'Blood Runs Deep')
     );
 
