@@ -101,7 +101,7 @@ INSERT INTO book(book_name, author)
     insert users
 */ 
 INSERT INTO user(first_name, last_name) 
-    VALUES('Paul', 'Tudor');
+    VALUES('Chris', 'Sewalson');
 
 INSERT INTO user(first_name, last_name)
     VALUES('Frank', 'Litny');
