@@ -92,8 +92,8 @@ def show_menu():
     except ValueError:
         print("\n  Invalid entry!\n")
         
-        return show_menu
-        sys.exit(0)
+        show_menu()
+        # sys.exit(0)
 
 def show_books(_cursor):
     # selecting book info to return - all book info selected 
