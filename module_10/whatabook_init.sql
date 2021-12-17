@@ -15,15 +15,17 @@ CREATE USER 'whatabook_user'@'localhost' IDENTIFIED WITH mysql_native_password B
 -- grant all privileges to the whatabook database to user whatabook_user on localhost 
 GRANT ALL PRIVILEGES ON whatabook.* TO'whatabook_user'@'localhost';
 
--- dropping constraints that may exist???
-ALTER TABLE wishlist DROP FOREIGN KEY fk_book;
-ALTER TABLE wishlist DROP FOREIGN KEY fk_user;
+
 
 -- dropping tables
 DROP TABLE IF EXISTS store;
 DROP TABLE IF EXISTS book;
 DROP TABLE IF EXISTS wishlist;
 DROP TABLE IF EXISTS user;
+
+-- dropping constraints that may exist???
+ALTER TABLE wishlist DROP FOREIGN KEY fk_book;
+ALTER TABLE wishlist DROP FOREIGN KEY fk_user;
 
 /*
 Creating tables next
