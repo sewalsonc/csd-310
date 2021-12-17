@@ -53,8 +53,8 @@ def show_account_menu():
     # showing user account login options
 
     try:
-        print("\n\t      -- What-A-Book Customer Account Menu --")
-        print("To select an option below, type the number shown to the left of the desired option.\n1.\t Wishlist\n2.\t Add Book\n3.\t Main Menu")
+        print("\n\t      -- What-A-Book Customer Account Menu --\n\n")
+        print("To select an option below, type the number shown to the left of the desired option.\n\n1.\t Wishlist\n2.\t Add Book\n3.\t Main Menu\n\n")
         account_option = int(input('Enter the number here: '))
 
         return account_option
@@ -75,15 +75,15 @@ def show_wishlist(_cursor, _user_id):
     
     wishlist = _cursor.fetchall()
 
-    print("\n        -- Displaying wishlist table for What-A-Book customer --")
+    print("\n        -- Displaying wishlist table for What-A-Book customer --\n")
 
     for book in wishlist:
         print("        Book Name: {}\n        Author: {}\n".format(book[4], book[5]))
 
 def show_menu():
-    print("\n  -- MAIN MENU --")
+    print("\n  -- MAIN MENU --\n")
 
-    print("To select an option below, type the number shown to the left of the selection.\n1.\t View Books\n2.\t View Store Locations\n3.\t My Account\n4.\t Exit Program")
+    print("To select an option below, type the number shown to the left of the selection.\n\n1.\t View Books\n2.\t View Store Locations\n3.\t My Account\n4.\t Exit Program\n")
 
     try:
         choice = int(input('Enter option here - Example: type 1 to View Books!>: '))
@@ -121,7 +121,7 @@ def show_books_to_add(_cursor, _user_id):
 
     books_available = _cursor.fetchall()
 
-    print("\n        -- The following books are available! --")
+    print("\n        -- The following books are available! --\n")
 
     for book in books_available:
         print("        Book Id: {}\n        Book Name: {}\n".format(book[0], book[1]))
