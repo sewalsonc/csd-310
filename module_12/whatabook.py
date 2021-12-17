@@ -53,7 +53,7 @@ def show_account_menu():
     # showing user account login options
 
     try:
-        print("\n\t      -- What-A-Book Customer Account Menu --\n\n")
+        print("\n\t      -- What-A-Book Customer Account Menu --\n")
         print("To select an option below, type the number shown to the left of the desired option.\n\n1.\t Wishlist\n2.\t Add Book\n3.\t Main Menu\n\n")
         account_option = int(input('Enter the number here: '))
 
